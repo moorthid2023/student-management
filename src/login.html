@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Login</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login flex justify-center">
+      <img src="../assets/20547283_6310507.jpg" class="w-[600px]" alt="" />
+      <form action="/src/dashboard.html" class="flex flex-col my-auto py-20">
+        <input
+          type="text"
+          id="loginName"
+          class="p-2 bg-yellow-100 m-1 rounded-md shadow-black shadow-sm outline-none"
+          placeholder="Name"
+        />
+        <input
+          type="password"
+          id="loginPassword"
+          class="p-2 bg-yellow-100 m-1 rounded-md shadow-black shadow-sm outline-none"
+          placeholder="Password"
+        />
+        <button
+          type="submit"
+          class="text-center text-white p-4 m-4 bg-blue-600 rounded-md shadow-black shadow-md"
+        >
+          Login
+        </button>
+        <a href="" class="text-center text-slate-400">Forgot Password?</a>
+        <a href="/src/signup.html" class="text-center text-slate-400"
+          >New User? Sign Up</a
+        >
+      </form>
+    </div>
+  </body>
+</html>

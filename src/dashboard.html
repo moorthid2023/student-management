@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboar_container p-4 flex flex-col h-screen">
+      <header class="flex">
+        <div class="profile flex flex-col p-2 justify-center items-center">
+          <div>
+            <img
+              src="../assets/Basic_Ui_(186).jpg"
+              class="w-[100px] h-[100px] rounded-full shadow-sm shadow-black"
+              alt=""
+            />
+          </div>
+          <label for="userId" id="profile_userName">user name</label>
+          <label for="userName" id="profile_userId">user id</label>
+          <a
+            href="/src/login.html"
+            class="p-1 border-2 rounded-lg shadow-black shadow-sm"
+            >logout</a
+          >
+        </div>
+        <h1 class="text-4xl flex-grow text-center my-10">Dashboard</h1>
+      </header>
+      <main class="flex flex-grow">
+        <nav class="text-center border border-blue-200">
+          <ul class="flex justify-evenly px-4 flex-col h-full">
+            <li>
+              <a
+                class="p-4 bg-blue-400 rounded-md shadow-black shadow-sm"
+                href=""
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-4 bg-blue-400 rounded-md shadow-black shadow-sm"
+                href=""
+                >Student Management</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-4 bg-blue-400 rounded-md shadow-black shadow-sm"
+                href=""
+                >Assignments</a
+              >
+            </li>
+            <li>
+              <a
+                class="p-4 bg-blue-400 rounded-md shadow-black shadow-sm"
+                href=""
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <aside
+          class="dashboard flex-grow border border-blue-200 flex justify-center items-center"
+        >
+          <a href=""
+            ><div
+              class="w-[200px] h-[200px] mx-10 border-2 shadow-black shadow-sm"
+            >
+              No of students
+            </div></a
+          >
+          <a href=""
+            ><div
+              class="w-[200px] h-[200px] mx-10 border-2 shadow-black shadow-sm"
+            >
+              No of departments
+            </div></a
+          >
+          <a href=""
+            ><div
+              class="w-[200px] h-[200px] mx-10 border-2 shadow-sm shadow-black"
+            >
+              Attendance
+            </div></a
+          >
+        </aside>
+      </main>
+    </div>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>
